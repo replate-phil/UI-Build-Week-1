@@ -12,3 +12,7 @@
 .contact-img {
   width: 20%;
 }
+
+.bio {
+  border: solid green 2px;
+}
