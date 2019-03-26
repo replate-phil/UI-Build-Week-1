@@ -1,18 +1,239 @@
-/* My code */
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.bordered {
+  border: solid 2px purple;
+}
+.nav-bar {
+  border: solid purple 3px;
+  background-color: lightgrey;
+  display: flex;
+  margin-top: 20px;
+  height: 40px;
+}
+.nav-bar .logo {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+.nav-bar .nav {
+  justify-content: flex-end;
+  display: flex;
+  border: solid green 3px;
+  background-color: lightgrey;
+}
+.nav-bar .nav a {
+  font-size: 1.6rem;
+  margin-right: 10px;
+  text-decoration: none;
+  color: darkolivegreen;
+}
+.main1 {
+  margin: 30px 0;
+}
+.main1 .main1-top {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main1 .main1-top h1 {
+  font-size: 3.8rem;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+.main1 .main1-top p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main1 .main1-buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.main1 .main1-buttons button {
+  width: 15%;
+}
+@media (max-width: 500px) {
+  .main1 .main1-buttons button {
+    width: 80%;
+    padding: 10px;
+  }
+}
+.main1 .main1-buttons a {
+  margin-top: 3px;
+}
+@media (max-width: 500px) {
+  .main1 .main1-buttons a {
+    display: none;
+  }
+}
+.main1 .main1-imgs {
+  margin: 30px 0;
+}
 .home-head-img {
   width: 30%;
   height: auto;
 }
-
-.bordered {
-  border: 2px solid purple;
-}
-
-.contact-img {
-  width: 20%;
-}
-
-.bio {
-  border: solid green 2px;
+.main2 h3 {
+  font-size: 1.8rem;
 }
