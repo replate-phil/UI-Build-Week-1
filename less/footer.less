@@ -1,8 +1,8 @@
 .footer {
   .focus(orange);
-  padding-top: 80px;
-  width: 100%;
+  // padding-top: 80px;
   display: flex;
+  flex-direction: row;
   @media (max-width: 500px) {
     flex-direction: column;
     text-align: center;
@@ -10,26 +10,18 @@
   }
 
   .copyright {
-    p {
-      padding: 0;
-      margin: 0;
-    }
-
-    @media (max-width: 500px) {
-      margin-top: 20px;
-    }
-  }
-  .footer-nav {
-    margin-top: 20px;
+    .focus(green);
     a {
       text-decoration: none;
       font-size: 1.4rem;
       @media (max-width: 500px) {
-        display: flex;
-        flex-direction: column;
         padding: 15px 0;
         border: darkgrey 1px solid;
       }
     }
+  }
+
+  ul {
+    .focus(pink);
   }
 }
