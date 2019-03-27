@@ -6,7 +6,7 @@
   justify-content: space-between;
 
   @media (max-width: 550px) {
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     border-bottom: darkgray solid 1px;
     flex-direction: column;
     align-items: center;
@@ -19,10 +19,12 @@
     font-family: @replate-font;
     font-size: 3.5rem;
     text-decoration: none;
+
     color: black;
 
-    @media (max-width: 500px) {
+    @media (max-width: 550px) {
       margin-bottom: 10px;
+      font-size: 2.6rem;
     }
   }
   .nav {
@@ -35,6 +37,10 @@
       font-size: 1.6rem;
       margin-right: 20px;
       text-decoration: none;
+      @media (max-width: 550px) {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
     }
   }
 }

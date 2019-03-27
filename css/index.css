@@ -136,6 +136,13 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Comfortaa", cursive;
+}
 h1 {
   font-size: 4rem;
 }
@@ -151,6 +158,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-family: "Quicksand", sans-serif;
 }
 img {
   max-width: 100%;
@@ -173,7 +181,7 @@ img {
 }
 @media (max-width: 550px) {
   .nav-bar {
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     border-bottom: darkgray solid 1px;
     flex-direction: column;
     align-items: center;
@@ -188,9 +196,10 @@ img {
   text-decoration: none;
   color: black;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .nav-bar .logo {
     margin-bottom: 10px;
+    font-size: 2.6rem;
   }
 }
 .nav-bar .nav {
@@ -203,6 +212,12 @@ img {
   font-size: 1.6rem;
   margin-right: 20px;
   text-decoration: none;
+}
+@media (max-width: 550px) {
+  .nav-bar .nav a {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
 }
 .footer {
   display: flex;
@@ -264,11 +279,18 @@ img {
 .main1 .main1-top h1 {
   font-size: 3.8rem;
   margin: 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .main1 .main1-top h1 {
+    font-size: 6rem;
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
 }
 .main1 .main1-top p {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .main1 .main1-buttons {
   display: flex;
@@ -286,6 +308,9 @@ img {
 }
 .main1 .main1-buttons a {
   margin-top: 3px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   .main1 .main1-buttons a {
@@ -295,9 +320,26 @@ img {
 .main1 .main1-imgs {
   margin: 30px 0;
 }
+@media (max-width: 500px) {
+  .main1 .main1-imgs {
+    margin: 90px 0;
+  }
+}
 .home-head-img {
   width: 30%;
   height: auto;
+}
+@media (max-width: 500px) {
+  .img1,
+  .img3 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .img2 {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 .main2 {
   display: flex;
@@ -309,22 +351,35 @@ img {
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .main2 h3 {
+    font-size: 5.5rem;
+    margin-bottom: 60px;
+    margin-top: 30px;
+  }
+}
 .main2 p {
   text-align: center;
 }
+@media (max-width: 500px) {
+  .main2 p {
+    margin-bottom: 80px;
+  }
+}
 .main .about-title {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 4rem;
 }
 @media (max-width: 550px) {
   .main .about-title {
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-top: 80px;
   }
 }
 .main .about {
   display: flex;
+  margin-bottom: 160px;
 }
 @media (max-width: 550px) {
   .main .about {
@@ -339,7 +394,7 @@ img {
 @media (max-width: 550px) {
   .main .about .about-text {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 .main .about .about-img {
@@ -353,14 +408,14 @@ img {
 .main .contact-bios h2 {
   width: 100%;
   text-align: center;
-  margin: 40px;
+  margin: 70px 0;
   font-size: 4rem;
 }
 @media (max-width: 500px) {
   .main .contact-bios h2 {
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 5rem;
   }
 }
@@ -424,7 +479,7 @@ img {
 }
 .main .join {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 @media (max-width: 500px) {
   .main .join {

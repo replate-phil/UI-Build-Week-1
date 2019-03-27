@@ -1,18 +1,26 @@
 .main1 {
   margin: 30px 0;
+  @media (max-width: 500px) {
+  }
   .main1-top {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h1 {
       font-size: 3.8rem;
       margin: 10px 0;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
+      @media (max-width: 500px) {
+        font-size: 6rem;
+        margin-top: 90px;
+        margin-bottom: 60px;
+      }
     }
     p {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
   .main1-buttons {
@@ -28,6 +36,9 @@
     }
     a {
       margin-top: 3px;
+      text-decoration: none;
+      color: black;
+      font-size: 1.6rem;
       @media (max-width: 500px) {
         display: none;
       }
@@ -35,6 +46,9 @@
   }
   .main1-imgs {
     margin: 30px 0;
+    @media (max-width: 500px) {
+      margin: 90px 0;
+    }
   }
 }
 
@@ -42,6 +56,19 @@
   width: 30%;
   height: auto;
 }
+.img1,
+.img3 {
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+.img2 {
+  @media (max-width: 500px) {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
 .main2 {
   display: flex;
   flex-direction: column;
@@ -50,8 +77,16 @@
   h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    @media (max-width: 500px) {
+      font-size: 5.5rem;
+      margin-bottom: 60px;
+      margin-top: 30px;
+    }
   }
   p {
     text-align: center;
+    @media (max-width: 500px) {
+      margin-bottom: 80px;
+    }
   }
 }
