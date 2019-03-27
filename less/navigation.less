@@ -6,21 +6,28 @@
   justify-content: space-between;
 
   @media (max-width: 550px) {
+    padding-top: 10px;
     padding-bottom: 80px;
-    border-bottom: darkgray solid 1px;
+    border-bottom: @accent-color-2 solid 1px;
     flex-direction: column;
     align-items: center;
   }
   i {
     margin-right: 5px;
+    color: @accent-color;
+    &:hover {
+      color: @accent-color-2;
+    }
   }
 
   .logo {
     font-family: @replate-font;
     font-size: 3.5rem;
     text-decoration: none;
-
-    color: black;
+    color: @main-color;
+    &:hover {
+      color: @accent-color;
+    }
 
     @media (max-width: 550px) {
       margin-bottom: 10px;
@@ -37,6 +44,11 @@
       font-size: 1.6rem;
       margin-right: 20px;
       text-decoration: none;
+      &:hover {
+        color: @accent-color;
+        padding-bottom: 5px;
+        border-bottom: solid @accent-color 1px;
+      }
       @media (max-width: 550px) {
         margin-bottom: 10px;
         font-size: 1.5rem;

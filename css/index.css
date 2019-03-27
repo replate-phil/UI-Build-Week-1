@@ -181,20 +181,28 @@ img {
 }
 @media (max-width: 550px) {
   .nav-bar {
+    padding-top: 10px;
     padding-bottom: 80px;
-    border-bottom: darkgray solid 1px;
+    border-bottom: lightgrey solid 1px;
     flex-direction: column;
     align-items: center;
   }
 }
 .nav-bar i {
   margin-right: 5px;
+  color: darkgray;
+}
+.nav-bar i:hover {
+  color: lightgrey;
 }
 .nav-bar .logo {
   font-family: "Comfortaa", cursive;
   font-size: 3.5rem;
   text-decoration: none;
   color: black;
+}
+.nav-bar .logo:hover {
+  color: darkgray;
 }
 @media (max-width: 550px) {
   .nav-bar .logo {
@@ -212,6 +220,11 @@ img {
   font-size: 1.6rem;
   margin-right: 20px;
   text-decoration: none;
+}
+.nav-bar .nav a:hover {
+  color: darkgray;
+  padding-bottom: 5px;
+  border-bottom: solid darkgray 1px;
 }
 @media (max-width: 550px) {
   .nav-bar .nav a {
@@ -235,6 +248,11 @@ img {
   margin-bottom: 20px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .footer .copyright {
+    padding-top: 10px;
+  }
+}
 .footer .copyright .logo {
   font-family: "Comfortaa", cursive;
   font-size: 2.8rem;
@@ -257,7 +275,7 @@ img {
 @media (max-width: 500px) {
   .footer .footer-nav {
     display: block;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
 }
 .footer .footer-nav a {
@@ -348,7 +366,8 @@ img {
   margin-bottom: 40px;
 }
 .main2 h3 {
-  font-size: 1.8rem;
+  margin-top: 30px;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 @media (max-width: 500px) {
@@ -364,6 +383,48 @@ img {
 @media (max-width: 500px) {
   .main2 p {
     margin-bottom: 80px;
+  }
+}
+.steps {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .steps {
+    border-top: 1px solid lightgrey;
+    padding-top: 100px;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+}
+.steps .step-card {
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 550px) {
+  .steps .step-card {
+    margin-bottom: 80px;
+  }
+}
+.steps .step-card:hover {
+  transition: all 0.4s ease-in-out;
+  padding: 20px;
+  color: #397367;
+}
+.steps .step-card .step-text {
+  font-size: 2.5rem;
+}
+.steps .step-card .step-text:hover {
+  font-size: 3rem;
+}
+.icon {
+  margin-top: 50px;
+  font-size: 8rem;
+}
+@media (max-width: 550px) {
+  .icon {
+    margin-top: 10px;
   }
 }
 .main .about-title {
