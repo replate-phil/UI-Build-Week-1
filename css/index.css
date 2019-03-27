@@ -167,12 +167,13 @@ img {
 .nav-bar {
   display: flex;
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 110px;
   height: 40px;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
   .nav-bar {
+    border-bottom: darkgray solid 1px;
     flex-direction: column;
     align-items: center;
   }
@@ -197,14 +198,12 @@ img {
   font-family: "Quicksand", sans-serif;
   color: black;
   font-size: 1.6rem;
-  margin-right: 10px;
+  margin-right: 20px;
   text-decoration: none;
 }
 .footer {
-  border: solid orange 3px;
-  background-color: lightgrey;
   display: flex;
-  flex-direction: row;
+  border-top: solid darkgray 1px;
 }
 @media (max-width: 500px) {
   .footer {
@@ -214,22 +213,41 @@ img {
   }
 }
 .footer .copyright {
-  border: solid green 3px;
-  background-color: lightgrey;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  width: 100%;
 }
-.footer .copyright a {
-  text-decoration: none;
+.footer .copyright .logo {
+  font-family: "Comfortaa", cursive;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+.footer .copyright .logo .fas {
+  margin-right: 5px;
+}
+.footer .copyright p {
+  font-family: "Quicksand", sans-serif;
   font-size: 1.4rem;
 }
+.footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
 @media (max-width: 500px) {
-  .footer .copyright a {
-    padding: 15px 0;
-    border: darkgrey 1px solid;
+  .footer .footer-nav {
+    display: block;
+    padding-bottom: 30px;
   }
 }
-.footer ul {
-  border: solid pink 3px;
-  background-color: lightgrey;
+.footer .footer-nav a {
+  font-family: "Quicksand", sans-serif;
+  color: black;
+  font-size: 1.6rem;
+  margin: 5px 10px;
+  text-decoration: none;
 }
 .main1 {
   margin: 30px 0;

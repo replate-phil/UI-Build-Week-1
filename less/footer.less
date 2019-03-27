@@ -1,8 +1,7 @@
 .footer {
-  .focus(orange);
-  // padding-top: 80px;
   display: flex;
-  flex-direction: row;
+  border-top: solid darkgray 1px;
+
   @media (max-width: 500px) {
     flex-direction: column;
     text-align: center;
@@ -10,18 +9,41 @@
   }
 
   .copyright {
-    .focus(green);
-    a {
-      text-decoration: none;
-      font-size: 1.4rem;
-      @media (max-width: 500px) {
-        padding: 15px 0;
-        border: darkgrey 1px solid;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    .logo {
+      font-family: @replate-font;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+
+      .fas {
+        margin-right: 5px;
       }
     }
+    p {
+      font-family: @nav-font;
+      font-size: 1.4rem;
+    }
   }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
 
-  ul {
-    .focus(pink);
+    @media (max-width: 500px) {
+      display: block;
+      padding-bottom: 30px;
+    }
+
+    a {
+      font-family: @nav-font;
+      color: black;
+      font-size: 1.6rem;
+      margin: 5px 10px;
+      text-decoration: none;
+    }
   }
 }
