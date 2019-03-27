@@ -1,81 +1,120 @@
-.about {
-  display: flex;
+.main {
+  .about-title {
+    margin-bottom: 30px;
+    font-size: 4rem;
 
-  .about-text {
+    @media (max-width: 550px) {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
   }
-  .about-img {
-  }
-}
 
-.contact-bios {
-  @media (max-width: 500px) {
-    margin: 0px;
-  }
-  h2 {
-    width: 100%;
-    text-align: center;
-    margin: 40px;
-    font-size: 5rem;
+  .about {
+    display: flex;
+    @media (max-width: 550px) {
+      display: block;
+      width: 100%;
+    }
+    .about-text {
+      width: 100%;
+      margin-right: 10px;
 
+      @media (max-width: 550px) {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+    .about-img {
+      width: 100%;
+    }
+  }
+
+  .contact-bios {
     @media (max-width: 500px) {
+      margin: 0px;
+    }
+    h2 {
       width: 100%;
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 5rem;
-    }
-  }
-  .bio {
-    display: flex;
-    margin-bottom: 100px;
-    //   @media only screen and (max-width: 600px) {
-    //     body {
-    //       background-color: lightblue;
-    //     }
-    //   }
-    @media (max-width: 500px) {
-      margin-bottom: 65px;
-      flex-direction: column;
-      align-items: center;
-    }
-    img {
-      width: 200px;
-      height: 200px;
+      margin: 40px;
+      font-size: 4rem;
+
       @media (max-width: 500px) {
-        width: 60%;
-        height: auto;
-      }
-    }
-    .card {
-      margin-left: 20px;
-      @media (max-width: 500px) {
+        width: 100%;
         text-align: center;
-        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 5rem;
       }
-      h3 {
-        font-size: 2.6rem;
-        margin-bottom: 5px;
+    }
+    .bio {
+      display: flex;
+      margin-bottom: 100px;
+      //   @media only screen and (max-width: 600px) {
+      //     body {
+      //       background-color: lightblue;
+      //     }
+      //   }
+      @media (max-width: 500px) {
+        margin-bottom: 65px;
+        flex-direction: column;
+        align-items: center;
+      }
+      img {
+        width: 200px;
+        height: 200px;
         @media (max-width: 500px) {
-          font-size: 3rem;
+          width: 60%;
+          height: auto;
         }
       }
-      .role {
-        font-size: 2rem;
+      .card {
+        margin-left: 20px;
+        @media (max-width: 500px) {
+          text-align: center;
+          margin-top: 30px;
+        }
+        h3 {
+          font-size: 2.6rem;
+          margin-bottom: 5px;
+          @media (max-width: 500px) {
+            font-size: 3rem;
+          }
+        }
+        .role {
+          font-size: 2rem;
+        }
+        .bio-text {
+          margin-top: 10px;
+        }
       }
-      .bio-text {
-        margin-top: 10px;
+    }
+    .bio2 {
+      flex-direction: row-reverse;
+      .card {
+        //text-align: right;
+        flex-direction: row-reverse;
+        margin-right: 20px;
+        padding-top: 30px;
+      }
+      @media (max-width: 500px) {
+        flex-direction: column;
       }
     }
   }
-  .bio2 {
-    flex-direction: row-reverse;
-    .card {
-      //text-align: right;
-      flex-direction: row-reverse;
-      margin-right: 20px;
-      padding-top: 30px;
-    }
+  .join {
+    text-align: center;
+    margin-bottom: 40px;
     @media (max-width: 500px) {
-      flex-direction: column;
+      display: none;
+    }
+    p {
+      font-size: 3rem;
+    }
+    a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
     }
   }
 }

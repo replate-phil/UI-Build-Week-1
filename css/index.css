@@ -167,12 +167,13 @@ img {
 .nav-bar {
   display: flex;
   padding-top: 30px;
-  padding-bottom: 110px;
+  padding-bottom: 130px;
   height: 40px;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .nav-bar {
+    padding-bottom: 90px;
     border-bottom: darkgray solid 1px;
     flex-direction: column;
     align-items: center;
@@ -184,6 +185,8 @@ img {
 .nav-bar .logo {
   font-family: "Comfortaa", cursive;
   font-size: 3.5rem;
+  text-decoration: none;
+  color: black;
 }
 @media (max-width: 500px) {
   .nav-bar .logo {
@@ -309,83 +312,148 @@ img {
 .main2 p {
   text-align: center;
 }
-.about {
+.main .about-title {
+  margin-bottom: 30px;
+  font-size: 4rem;
+}
+@media (max-width: 550px) {
+  .main .about-title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+}
+.main .about {
   display: flex;
 }
+@media (max-width: 550px) {
+  .main .about {
+    display: block;
+    width: 100%;
+  }
+}
+.main .about .about-text {
+  width: 100%;
+  margin-right: 10px;
+}
+@media (max-width: 550px) {
+  .main .about .about-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.main .about .about-img {
+  width: 100%;
+}
 @media (max-width: 500px) {
-  .contact-bios {
+  .main .contact-bios {
     margin: 0px;
   }
 }
-.contact-bios h2 {
+.main .contact-bios h2 {
   width: 100%;
   text-align: center;
   margin: 40px;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 @media (max-width: 500px) {
-  .contact-bios h2 {
+  .main .contact-bios h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
     font-size: 5rem;
   }
 }
-.contact-bios .bio {
+.main .contact-bios .bio {
   display: flex;
   margin-bottom: 100px;
 }
 @media (max-width: 500px) {
-  .contact-bios .bio {
+  .main .contact-bios .bio {
     margin-bottom: 65px;
     flex-direction: column;
     align-items: center;
   }
 }
-.contact-bios .bio img {
+.main .contact-bios .bio img {
   width: 200px;
   height: 200px;
 }
 @media (max-width: 500px) {
-  .contact-bios .bio img {
+  .main .contact-bios .bio img {
     width: 60%;
     height: auto;
   }
 }
-.contact-bios .bio .card {
+.main .contact-bios .bio .card {
   margin-left: 20px;
 }
 @media (max-width: 500px) {
-  .contact-bios .bio .card {
+  .main .contact-bios .bio .card {
     text-align: center;
     margin-top: 30px;
   }
 }
-.contact-bios .bio .card h3 {
+.main .contact-bios .bio .card h3 {
   font-size: 2.6rem;
   margin-bottom: 5px;
 }
 @media (max-width: 500px) {
-  .contact-bios .bio .card h3 {
+  .main .contact-bios .bio .card h3 {
     font-size: 3rem;
   }
 }
-.contact-bios .bio .card .role {
+.main .contact-bios .bio .card .role {
   font-size: 2rem;
 }
-.contact-bios .bio .card .bio-text {
+.main .contact-bios .bio .card .bio-text {
   margin-top: 10px;
 }
-.contact-bios .bio2 {
+.main .contact-bios .bio2 {
   flex-direction: row-reverse;
 }
-.contact-bios .bio2 .card {
+.main .contact-bios .bio2 .card {
   flex-direction: row-reverse;
   margin-right: 20px;
   padding-top: 30px;
 }
 @media (max-width: 500px) {
-  .contact-bios .bio2 {
+  .main .contact-bios .bio2 {
     flex-direction: column;
   }
+}
+.main .join {
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .main .join {
+    display: none;
+  }
+}
+.main .join p {
+  font-size: 3rem;
+}
+.main .join a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+.form {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 80px;
+}
+@media (max-width: 550px) {
+  .form {
+    padding: 80px 0;
+  }
+}
+.form .main-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form .main-text h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
 }
