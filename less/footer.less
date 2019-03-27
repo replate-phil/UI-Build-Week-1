@@ -47,6 +47,16 @@
       font-size: 1.6rem;
       margin: 5px 10px;
       text-decoration: none;
+      &:hover {
+        color: @accent-color;
+        padding-right: 10px;
+        border-right: 1px solid @accent-color;
+        @media (max-width: 550px) {
+          padding: 0;
+          border-bottom: 1px solid @accent-color;
+          border-right: none;
+        }
+      }
     }
   }
 }

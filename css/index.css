@@ -285,6 +285,18 @@ img {
   margin: 5px 10px;
   text-decoration: none;
 }
+.footer .footer-nav a:hover {
+  color: darkgray;
+  padding-right: 10px;
+  border-right: 1px solid darkgray;
+}
+@media (max-width: 550px) {
+  .footer .footer-nav a:hover {
+    padding: 0;
+    border-bottom: 1px solid darkgray;
+    border-right: none;
+  }
+}
 .main1 {
   margin: 30px 0;
 }
@@ -347,6 +359,9 @@ img {
   width: 30%;
   height: auto;
 }
+.img1 {
+  margin-top: 60px;
+}
 @media (max-width: 500px) {
   .img1,
   .img3 {
@@ -399,6 +414,7 @@ img {
   }
 }
 .steps .step-card {
+  background-color: white;
   width: 100%;
   text-align: center;
 }
@@ -408,15 +424,19 @@ img {
   }
 }
 .steps .step-card:hover {
+  font-size: 4rem;
   transition: all 0.4s ease-in-out;
   padding: 20px;
   color: #397367;
 }
+.steps .step-card:hover .step-text {
+  font-size: 3rem;
+}
+.steps .step-card:hover .step-content {
+  font-size: 1.8rem;
+}
 .steps .step-card .step-text {
   font-size: 2.5rem;
-}
-.steps .step-card .step-text:hover {
-  font-size: 3rem;
 }
 .icon {
   margin-top: 50px;
