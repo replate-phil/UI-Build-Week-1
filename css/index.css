@@ -309,3 +309,83 @@ img {
 .main2 p {
   text-align: center;
 }
+.about {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .contact-bios {
+    margin: 0px;
+  }
+}
+.contact-bios h2 {
+  width: 100%;
+  text-align: center;
+  margin: 40px;
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .contact-bios h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 5rem;
+  }
+}
+.contact-bios .bio {
+  display: flex;
+  margin-bottom: 100px;
+}
+@media (max-width: 500px) {
+  .contact-bios .bio {
+    margin-bottom: 65px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact-bios .bio img {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 500px) {
+  .contact-bios .bio img {
+    width: 60%;
+    height: auto;
+  }
+}
+.contact-bios .bio .card {
+  margin-left: 20px;
+}
+@media (max-width: 500px) {
+  .contact-bios .bio .card {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+.contact-bios .bio .card h3 {
+  font-size: 2.6rem;
+  margin-bottom: 5px;
+}
+@media (max-width: 500px) {
+  .contact-bios .bio .card h3 {
+    font-size: 3rem;
+  }
+}
+.contact-bios .bio .card .role {
+  font-size: 2rem;
+}
+.contact-bios .bio .card .bio-text {
+  margin-top: 10px;
+}
+.contact-bios .bio2 {
+  flex-direction: row-reverse;
+}
+.contact-bios .bio2 .card {
+  flex-direction: row-reverse;
+  margin-right: 20px;
+  padding-top: 30px;
+}
+@media (max-width: 500px) {
+  .contact-bios .bio2 {
+    flex-direction: column;
+  }
+}
