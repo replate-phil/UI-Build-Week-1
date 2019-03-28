@@ -1,10 +1,13 @@
 .nav-bar {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 130px;
-  height: 40px;
+  padding-top: 10px;
+  margin-bottom: 130px;
+  height: 60px;
   justify-content: space-between;
-
+  background-color: @onyx;
+  @media (min-width: 1000px) {
+    width: 100%;
+  }
   @media (max-width: 550px) {
     padding-top: 10px;
     padding-bottom: 80px;
@@ -14,19 +17,20 @@
   }
   i {
     margin-right: 5px;
-    color: @accent-color;
-    &:hover {
-      color: @accent-color-2;
-    }
+    color: @satin-gold;
   }
 
   .logo {
+    margin-left: 10px;
     font-family: @replate-font;
     font-size: 3.5rem;
     text-decoration: none;
-    color: @main-color;
+    color: @platinum;
     &:hover {
-      color: @accent-color;
+      i {
+        color: @gold-faded;
+      }
+      color: @faded-onyx;
     }
 
     @media (max-width: 550px) {
@@ -40,14 +44,15 @@
 
     a {
       font-family: @nav-font;
-      color: black;
+      color: @platinum;
       font-size: 1.6rem;
-      margin-right: 20px;
+      margin-right: 10px;
+      margin-left: 5px;
       text-decoration: none;
       &:hover {
-        color: @accent-color;
+        color: @faded-onyx;
         padding-bottom: 5px;
-        border-bottom: solid @accent-color 1px;
+        border-bottom: solid @gold-faded 1px;
       }
       @media (max-width: 550px) {
         margin-bottom: 10px;
