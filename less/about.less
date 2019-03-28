@@ -23,12 +23,16 @@
     padding-bottom: 10px;
     border-bottom: 1px solid @satin-gold;
     @media (max-width: 650px) {
+      padding-top: 35px;
       text-align: center;
       padding-bottom: 20px;
       margin: 0 40px;
       font-size: 6rem;
       color: @myrtle-green;
       border-bottom: 1px solid @satin-gold;
+    }
+    @media (max-width: 500px) {
+      padding-top: 45px;
     }
   }
 
@@ -134,19 +138,33 @@
       }
     }
   }
-  .join {
-    text-align: center;
-    margin-bottom: 100px;
-    @media (max-width: 500px) {
-      display: none;
+}
+.join {
+  text-align: center;
+  margin: 150px 0;
+  border: 2px solid @platinum;
+  width: 100%;
+  border-radius: 60px;
+  padding: 40px 0;
+  &:hover {
+    background-color: #8bc6bd;
+    a {
+      color: #f9e1a4;
+      font-size: 5rem;
     }
     p {
       font-size: 3rem;
     }
-    a {
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: black;
-    }
+  }
+  @media (max-width: 500px) {
+    display: none;
+  }
+  p {
+    font-size: 5rem;
+  }
+  a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
   }
 }

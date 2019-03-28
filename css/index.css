@@ -186,7 +186,6 @@ img {
 .nav-bar {
   display: flex;
   padding-top: 10px;
-  margin-bottom: 130px;
   height: 60px;
   justify-content: space-between;
   background-color: #35393c;
@@ -239,6 +238,7 @@ img {
   margin-right: 10px;
   margin-left: 5px;
   text-decoration: none;
+  cursor: pointer;
 }
 .nav-bar .nav a:hover {
   color: #757a7c;
@@ -250,6 +250,81 @@ img {
     margin-bottom: 10px;
     font-size: 1.5rem;
   }
+}
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100px;
+}
+.dropdown .signcontain {
+  color: white;
+  text-align: center;
+  background-color: #494d4f;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid #d6b45e 2px;
+  border-left: solid #d6b45e 2px;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+}
+@media (max-width: 750px) {
+  .dropdown .signcontain {
+    width: 220px;
+    padding: 0;
+  }
+}
+@media (max-width: 650px) {
+  .dropdown .signcontain {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .dropdown .signcontain {
+    width: 500px;
+    padding-bottom: 10px;
+  }
+}
+.dropdown .signcontain p {
+  color: #8bd3c8;
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+@media (max-width: 750px) {
+  .dropdown .signcontain p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .dropdown .signcontain p {
+    padding: 0;
+  }
+}
+@media (max-width: 650px) {
+  .dropdown .signcontain p {
+    font-size: 3rem;
+  }
+}
+.dropdown .signcontain input {
+  margin-bottom: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+@media (max-width: 650px) {
+  .dropdown .signcontain input {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 650px) {
+  .dropdown .signcontain input {
+    margin-bottom: 10px;
+  }
+}
+.hidden {
+  display: none;
 }
 .icon-bar {
   margin-top: 100px;
@@ -268,13 +343,22 @@ img {
   margin: 0 30px;
   font-size: 3rem;
 }
-.icon-bar i:hover {
-  color: darkgray;
-}
 @media (max-width: 500px) {
   .icon-bar i {
     font-size: 3rem;
   }
+}
+.fa-twitter-square:hover {
+  color: #429cd6;
+}
+.fa-instagram:hover {
+  color: #8a3ab9;
+}
+.fa-facebook-square:hover {
+  color: #3a589e;
+}
+.fa-youtube:hover {
+  color: #cd1f28;
 }
 .footer-container {
   background-color: #35393c;
@@ -506,7 +590,7 @@ img {
   font-size: 4rem;
   transition: all 0.4s ease-in-out;
   padding: 20px;
-  color: #397367;
+  color: #71baaf;
 }
 .steps .step-card:hover .step-text {
   font-size: 3rem;
@@ -556,12 +640,18 @@ img {
 }
 @media (max-width: 650px) {
   .main .about-title {
+    padding-top: 35px;
     text-align: center;
     padding-bottom: 20px;
     margin: 0 40px;
     font-size: 6rem;
     color: #397367;
     border-bottom: 1px solid #cca43b;
+  }
+}
+@media (max-width: 500px) {
+  .main .about-title {
+    padding-top: 45px;
   }
 }
 .main .about {
@@ -679,31 +769,51 @@ img {
     flex-direction: column;
   }
 }
-.main .join {
+.join {
   text-align: center;
-  margin-bottom: 100px;
+  margin: 150px 0;
+  border: 2px solid #e5e5e5;
+  width: 100%;
+  border-radius: 60px;
+  padding: 40px 0;
+}
+.join:hover {
+  background-color: #8bc6bd;
+}
+.join:hover a {
+  color: #f9e1a4;
+  font-size: 5rem;
+}
+.join:hover p {
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
-  .main .join {
+  .join {
     display: none;
   }
 }
-.main .join p {
-  font-size: 3rem;
+.join p {
+  font-size: 5rem;
 }
-.main .join a {
-  font-size: 1.5rem;
+.join a {
+  font-size: 2.5rem;
   text-decoration: none;
   color: black;
 }
 .form {
   text-align: center;
   font-size: 1.6rem;
-  margin-bottom: 80px;
+  margin-bottom: 130px;
+  margin-top: 50px;
 }
 @media (max-width: 550px) {
   .form {
     padding: 80px 0;
+  }
+}
+@media (max-width: 650px) {
+  .form {
+    padding-top: 45px;
   }
 }
 .form .main-text {
@@ -711,6 +821,8 @@ img {
   margin-bottom: 30px;
 }
 .form .main-text h1 {
+  color: #42858c;
+  font-size: 8rem;
   font-size: 5rem;
   margin-bottom: 10px;
 }

@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic|Quicksand|Raleway"
       rel="stylesheet"
     />
-    <script src="js/index.js"></script>
+    <script defer="defer" src="js/index.js"></script>
   </head>
 
   <body class="container">
@@ -27,10 +27,19 @@
         <a href="home.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
-        <a class="cd-signup" href="signup.html">Sign Up</a>
-
-        <a class="cd-signin" href="login.html">Sign In</a>
+        <a class="signup" href="signup.html">Sign Up</a>
+        <a class="signin">Sign In</a>
       </ul>
+    </div>
+    <div class="dropdown">
+      <div>
+        <form action="/action_page.php" class="signcontain hidden">
+          <p>Welcome Back!</p>
+          Username: <input type="text" name="username" /><br />
+          Password: <input type="password" name="password" /><br />
+          <input class="submit" type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
 
     <!-- MAIN -->

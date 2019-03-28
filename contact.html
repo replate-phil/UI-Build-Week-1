@@ -13,10 +13,7 @@
       href="https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic|Quicksand|Raleway"
       rel="stylesheet"
     />
-
-    <!-- <link rel="" href="" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="" /> -->
-    <!-- <script src=""> </script> -->
+    <script defer="defer" src="js/index.js"></script>
   </head>
 
   <body class="container">
@@ -24,13 +21,23 @@
     <div class="nav-bar">
       <a class="logo" href="home.html"><i class="fas fa-egg"></i>Replate</a>
 
-      <ul class="nav">
+      <ul class="nav main-nav">
         <a href="home.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
-        <a href="signup.html">Sign Up</a>
-        <a href="login.html">Login</a>
+        <a class="signup" href="signup.html">Sign Up</a>
+        <a class="signin">Sign In</a>
       </ul>
+    </div>
+    <div class="dropdown">
+      <div>
+        <form action="/action_page.php" class="signcontain hidden">
+          <p>Welcome Back!</p>
+          Username: <input type="text" name="username" /><br />
+          Password: <input type="password" name="password" /><br />
+          <input class="submit" type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
 
     <!-- MAIN CONTACT -->
