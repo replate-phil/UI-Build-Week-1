@@ -1,4 +1,4 @@
-// DROP DOWN SIGN IN
+// SIGN IN - DROP DOWN
 
 //const dropdown = document.querySelector(".dropdown");
 const signcontain = document.querySelector(".signcontain");
@@ -6,46 +6,37 @@ const signcontain = document.querySelector(".signcontain");
 const signIn = document.querySelector(".signin");
 
 signIn.addEventListener("click", () => {
-  console.log(signcontain);
   signcontain.classList.toggle("hidden");
 });
 
-// CAROUSEL
-class Carousel {
-  constructor(images) {
-    this.images = images;
-    this.imgs = images.querySelectorAll("img");
-    this.leftBtn = images.querySelector(".leftbtn");
-    this.rightBtn = images.querySelector(".rightbtn");
-    this.rightBtn.addEventListener("click", () => {
-      this.rightClick();
-    });
-    this.leftBtn.addEventListener("click", () => {
-      this.leftClick();
-    });
-    this.currentIndex = 0;
-    this.imgs[0].style.display = "block";
-  }
+// SIGN UP - DROP DOWN
+const signcontain2 = document.querySelector(".signcontain2");
 
-  rightClick() {
-    this.imgs[this.currentIndex].style.display = "none";
-    if (this.currentIndex === this.imgs.length - 1) {
-      this.currentIndex = 0;
-    } else {
-      this.currentIndex = this.currentIndex + 1;
-    }
-    this.imgs[this.currentIndex].style.display = "block";
-  }
-  leftClick() {
-    this.imgs[this.currentIndex].style.display = "none";
-    if (this.currentIndex === 0) {
-      this.currentIndex = this.imgs.length - 1;
-    } else {
-      this.currentIndex = this.currentIndex - 1;
-    }
-    this.imgs[this.currentIndex].style.display = "block";
-  }
+const signUp = document.querySelector(".signup");
+
+signUp.addEventListener("click", () => {
+  signcontain2.classList.toggle("hidden");
+});
+
+// CAROUSEL
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs((slideIndex += n));
 }
-// console.log("hello")
-let carousel = document.querySelector(".carousel");
-carousel = new Carousel(carousel);
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
+}
