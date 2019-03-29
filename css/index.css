@@ -604,28 +604,24 @@ img {
   }
 }
 .carousel {
-  margin-top: 60px;
-  display: flexbox;
-  flex-direction: row;
-  border: solid purple 3px;
-  background-color: lightgrey;
+  margin: 40px 100px;
+  width: auto;
+  padding-left: 45px;
 }
-.mySlides {
-  border: solid purple 3px;
-  background-color: lightgrey;
-  width: 300px;
+.carousel .mySlides {
+  width: 30%;
   height: auto;
 }
 @media (max-width: 500px) {
-  .mySlides .img1,
-  .mySlides .img3 {
-    display: none;
+  .carousel .mySlides {
+    display: block;
   }
 }
-@media (max-width: 500px) {
-  .mySlides .img2 {
-    width: 100%;
-    padding: 0 10px;
+@media (max-width: 700px) {
+  .carousel .mySlides .img1,
+  .carousel .mySlides .img2,
+  .carousel .mySlides .img3 {
+    display: none;
   }
 }
 .main2 {
