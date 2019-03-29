@@ -9,7 +9,7 @@ signIn.addEventListener("click", () => {
   signcontain.classList.toggle("hidden");
 });
 
-// SIGN UP - DROP DOWN
+// // SIGN UP - DROP DOWN
 // const signcontain2 = document.querySelector(".signcontain2");
 
 // const signUp = document.querySelector(".signup");
@@ -62,4 +62,4 @@ signIn.addEventListener("click", () => {
 //     x[i].style.display = "none";
 //   }
 //   x[slideIndex - 1].style.display = "block";
-}
+//}
