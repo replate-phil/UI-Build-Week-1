@@ -10,13 +10,13 @@ signIn.addEventListener("click", () => {
 });
 
 // SIGN UP - DROP DOWN
-const signcontain2 = document.querySelector(".signcontain2");
+// const signcontain2 = document.querySelector(".signcontain2");
 
-const signUp = document.querySelector(".signup");
+// const signUp = document.querySelector(".signup");
 
-signUp.addEventListener("click", () => {
-  signcontain2.classList.toggle("hidden");
-});
+// signUp.addEventListener("click", () => {
+//   signcontain2.classList.toggle("hidden");
+// });
 
 // CAROUSEL
 var slideIndex = 1;
